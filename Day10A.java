@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 public class Day10A {
 	WebDriver driver;
-
+	//taking parameters from Day10A.xml and including and excluding tests
 	@Parameters({ "username", "password" })
 	@Test
 	public void testCase1(String un, String pw) {

@@ -21,7 +21,8 @@ public class Day5 {
 	public void test1() {
 		String actualTitle = driver.getTitle();
 		String expectedTitle = "WebDriverUniversity.com";
-		Assert.assertEquals(actualTitle, expectedTitle);
+		//Assert.assertEquals(actualTitle, expectedTitle);
+		assertEquals(actualTitle, expectedTitle);
 	}
 	
 	@Test
@@ -29,6 +30,7 @@ public class Day5 {
 		String actualURL = driver.getCurrentUrl();
 		boolean expectedURL = actualURL.contains("webdriveruniversity");
 		Assert.assertEquals(expectedURL, true);
+		
 		
 	}
 

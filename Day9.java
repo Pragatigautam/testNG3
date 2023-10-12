@@ -11,6 +11,7 @@ public class Day9 {
 	WebDriver driver;
 
 	@DataProvider(name = "loginCredentials")
+	//dataprovider returns multidimentional object array
 	public Object[][] provideLoginCredentials() {
 		return new Object[][] {
 								{ "standard_user", "secret_sauce" },
